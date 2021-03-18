@@ -45,18 +45,36 @@ a {
 
 .app {
   background: linear-gradient(
-      90deg,
-      #010202 0%,
-      #010202 50%,
-      rgba(1, 2, 2, 0.2) 90.9%
-    )
-    /*url(../img/cover-image.jpg) no-repeat center right*/;
+    90deg,
+    #010202 0%,
+    #010202 50%,
+    rgba(1, 2, 2, 0.2) 90.9%
+  );
   min-height: 100vh;
   color: #fff;
   display: grid;
   justify-items: center;
   grid-template-rows: max-content 1fr;
   grid-template-columns: 1fr;
+}
+
+.video-container {
+  position: absolute;
+  z-index: -1;
+  inset: 0px;
+  overflow: hidden;
+}
+
+video {
+  margin: auto;
+  position: absolute;
+  z-index: -1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  visibility: visible;
+  opacity: 1;
+  height: 100%;
 }
 
 .film {
@@ -130,7 +148,6 @@ a {
   .app {
     background: url(../img/cover-image.jpg) no-repeat bottom center / 300px;
     padding-bottom: 400px;
-    background-position: ;
   }
 
   video {
