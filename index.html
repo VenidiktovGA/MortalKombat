@@ -12,9 +12,12 @@
     />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.css" />
 
-    <!--<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
-    <script src="js/jquery.vide.min.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.7/dist/jquery.fancybox.min.js"></script>
+    <!--<script src="js/jquery.vide.min.js"></script>
     <script src="js/main.js" defer></script>-->
   </head>
   <body>
@@ -51,16 +54,22 @@
             смертельная битва, где останется только сильнейший
           </p>
           <div class="buttons">
-            <button class="button button-promary">Предзаказ фильма</button>
+            <a class="button button-promary" data-fancybox data-src="#modal">Предзаказ фильма</a>
+            <a data-fancybox href="https://www.youtube.com/watch?v=WLJL5DTvzXg&ab_channel=FRESHTrailers">
             <button class="button button-default">
 							<div class="button-default_container">
               <img class="button-icon" src="img/play.svg" alt="icon: play" />
               <span class="button-text">Смотреть трейлер</span>
 							</div>
             </button>
+            </a>
           <!-- /.buttons -->
         </section>
       </div>
+    </div>
+    <div class="modal" id="modal">
+	    <h2>Hello</h2>
+	    <p>You are awesome.</p>
     </div>
   </body>
 </html>
