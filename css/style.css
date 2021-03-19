@@ -176,15 +176,16 @@ input[type="submit"] {
 .form-container > p {
   margin-top: 5px;
   margin-bottom: 30px;
+  text-align: center;
 }
 
 .form-container > h2 {
   margin-bottom: 0px;
 }
 
-@media (max-width: 1200px) {
-  .app {
-  }
+.email-container {
+  display: grid;
+  grid-template-columns: max-content 1fr;
 }
 
 @media (max-width: 768px) {
