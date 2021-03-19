@@ -11,6 +11,12 @@ a {
   text-decoration: none;
 }
 
+form {
+  display: grid;
+  justify-items: center;
+  grid-gap: 60px;
+}
+
 .header {
   max-width: 1146px;
   align-self: start;
@@ -141,6 +147,39 @@ video {
 
 .modal {
   display: none;
+}
+
+input[type="submit"] {
+  background-color: transparent;
+  border: none;
+  font-size: 21px;
+  line-height: 140%;
+  color: #fff;
+}
+
+.fancybox-content {
+  background: linear-gradient(90deg, #010202 -2.88%, rgba(1, 2, 2, 0.2) 44.9%),
+    url(../img/cover-image.jpg) no-repeat center !important;
+  background-size: cover !important;
+  color: #fff !important;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 21px;
+  line-height: 140%;
+}
+
+.form-container {
+  display: grid;
+  justify-items: center;
+  margin-bottom: 30px;
+}
+
+.form-container > p {
+  margin-top: 5px;
+  margin-bottom: 30px;
+}
+
+.form-container > h2 {
+  margin-bottom: 0px;
 }
 
 @media (max-width: 1200px) {
